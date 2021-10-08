@@ -7,3 +7,27 @@ web.print();
 
  Course Code: BT1CWD1: Bsc Computing and Web Development
 
+Student vince = new Student("Vincent Ogieva", 22136166);
+vince.print();
+ Student ID: 22136166 Name: Vincent Ogieva
+vince.print();
+ Student ID: 22136166 Name: Vincent Ogieva
+vince.printCourse();
+    Exception occurred.
+vince.print();
+ Student ID: 22136166 Name: Vincent Ogieva
+vince.enrol(web);
+vince.printCourse();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: Bsc Computing and Web Development
+
+vince.printCourse();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: Bsc Computing and Web Development
+
