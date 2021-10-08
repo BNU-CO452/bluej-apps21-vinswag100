@@ -1,0 +1,9 @@
+Course course1 = new Course("BT1CWD1", " Computing and web development ");
+Course web = new Course("BT1CWD1", "Bsc Computing and Web Development");
+web.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: Bsc Computing and Web Development
+
