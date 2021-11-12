@@ -1,33 +1,59 @@
 
 /**
- * Write a description of class Module here.
+ * This class represents a course module and contains.
+ * Information on the module title and code.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Vincent Ogieva)
+ * @version (1.0 15/10/2021)
  */
 public class Module
 {
     // instance variables - replace the example below with your own
-    private int x;
+
+    private String code; 
+
+    private String title;
+
+    private int credit; 
 
     /**
-     * Constructor for objects of class Module
+     * Constructor for objects of class modules
      */
-    public Module()
+    public Module(String code, String title)
     {
         // initialise instance variables
-        x = 0;
+        credit = 15;
+        this.code = code;
+        this.title = title;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    public String getCode()
     {
-        // put your code here
-        return x + y;
+         return code;    
     }
-}
+     
+    public String getTitle()
+    {
+         return title;     
+    
+    } //end of method 
+    
+    public void setCredit(int credit)
+    {
+        this.credit = credit; 
+    }
+    
+    /**
+     * Print the details of the course, the list
+     * of students enrolled and the module
+     */
+    public void print()
+    {
+        System.out.println(" Module Code: " + code + ": " 
+                            + title + " credit " + credit);
+        System.out.println();
+    }
+     
+    
+}//end of class
+

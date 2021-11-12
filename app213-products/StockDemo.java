@@ -16,18 +16,21 @@ public class StockDemo
      * Create a StockManager and populate it with at least
      * 10 sample products.
      */
-    public StockDemo(StockList stock)
+    public StockDemo()
     {
-        this.stock = stock;
+        this.stock = new StockList();
         
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Samsung Galaxy S20"));
-        stock.add(new Product(102, "Apple iPhone 12"));
-        stock.add(new Product(103, "Google Pixel 4A"));
+        stock.add(new Product(101, "Alloy Bikes"));
+        stock.add(new Product(102, "Pogo jumper"));
+        stock.add(new Product(103, "Electric Scooter"));
+        stock.add(new Product(104, "GTA V"));
+        
+        runDemo();
     }
-    
+     
     /**
      * Provide a demonstration of how the ProductList meets all
      * the user requirements by making a delivery of each product 
@@ -50,9 +53,11 @@ public class StockDemo
     
     private void buyProducts()
     {
+        stock.buyProduct(101, 500);
     }
 
     private void sellProducts()
     {
+        stock.sellProduct(101,300);
     }    
 }

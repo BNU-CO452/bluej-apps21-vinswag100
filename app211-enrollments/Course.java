@@ -4,7 +4,7 @@ import java.util.*;
  * This class contains information about an undergraduate course
  * at BNU together with a list of student who are enrolled
  *
- * @author Derek Peacock
+ * @author Vincent Ogieva
  * @version 1.0 14/07/2021
  */
 public class Course
@@ -14,6 +14,7 @@ public class Course
     // The full title including qualification and subject
     private String title;
     
+    private Module module;
     /**
      * Create a Course with a maximum number of enrolments. 
      * All other details are set to unkown values.
@@ -33,11 +34,13 @@ public class Course
     {
         printHeading();
         
-        System.out.println(" Course Code: " + code + ": " + title);
+        System.out.println(" Course Code: " + code + ":" + title) ; 
         System.out.println();
+        
+        module.print();
     }
     
-    /**
+    /* 
      * Print out the details of the course to the terminal.
      */
     private void printHeading()
@@ -46,5 +49,11 @@ public class Course
         System.out.println("   App211: Course Details");
         System.out.println(" --------------------------------");
         System.out.println();
+    }
+    
+    public void addModule(Module module)
+    {
+        this.module = module;
+        
     }
 }

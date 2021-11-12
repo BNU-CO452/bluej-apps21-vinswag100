@@ -19,7 +19,7 @@ public class Course
      
     public Course()
     {
-        this("G400", "BSc Computing");
+        this("GW4F", "BSc Computing and Web Developement");
     }
     
     /**
@@ -43,7 +43,18 @@ public class Course
      */
     public void createModules()
     {
-
+        Module moduleCO452 = new Module("CO452", "Programming Concepts");
+        addModule(moduleCO452);
+        
+        Module moduleCO453 = new Module("CO453", "Application Programming");
+        addModule(moduleCO453);
+        
+        Module moduleCO454 = new Module("CO454", "Digital Technologies and Proffesional Practice");
+        addModule(moduleCO454);
+        
+        Module moduleCO456 = new Module("CO456", "Web Development"); 
+        addModule(moduleCO456);
+         
     }
     
     public void addModule(Module module)
@@ -59,6 +70,17 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
+        Grades grade = Grades.NS;
+        
+        if(mark > Grades.B.getValue())
+        {
+            return Grades .A;
+        }
+        else if(mark >= 60)
+        {
+            return Grades.B;
+        }
+         
         return Grades.NS;
     }
     
@@ -89,6 +111,21 @@ public class Course
      */
     public void printModules()
     {
-        System.out.println();
+      System.out.println("Course Modules");
+      System.out.println("---------------");
+      System.out.println();
+      
+      for (Module module : modules) 
+      {
+          System.out.print(module.getCode());
+          System.out.println(module.getTitle());
+          
+          
+          
+    
+      } 
+       
+       
+       System.out.println();
     }
 }

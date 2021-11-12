@@ -24,7 +24,7 @@ public class Student
      */
     public Student()
     {
-        this("Derek", 12345678);
+        this("Vincent", 22136166);
     }
     
     /**
@@ -43,6 +43,19 @@ public class Student
         marks.add(mark);
     }
     
+    public void createMarks()
+    {
+        int value = 70;
+        for (Module module : course.modules)
+        {
+            ModuleMark mark = new ModuleMark(module);
+            mark.setMark(value);
+            marks.add(mark);
+            
+            value = value - 10;
+        }
+    
+}
     /**
      * Find the module by the moduleCode and
      * set its mark to the value
@@ -58,7 +71,7 @@ public class Student
     public void enrol(Course course)
     {
         this.course = course;
-        awardTestMarks();
+        createMarks();
     }
     
     /**
@@ -102,12 +115,15 @@ public class Student
         course.print();
     }
     
-    private void printModules()
+    public void printModules()
+{
+     for(ModuleMark Mark: marks)
     {
-
+        
     }
-    
-    public void printTranscript()
+}
+   
+   public void printTranscript()
     {
         System.out.println(" ------------------------------------");
         System.out.println(" App21-02: Exam Board Transcript 2021");
@@ -122,6 +138,7 @@ public class Student
         System.out.println(" Code \t Module \t\tCredit\t Mark \t Grade");
         System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
         
+        printModules();
        
         Grades finalGrade = course.calculateGrade(marks);
         
