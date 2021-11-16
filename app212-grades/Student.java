@@ -80,6 +80,14 @@ public class Student
      */
     public void awardTestMarks()
     {
+        int value = 75;
+        for(Module module : course.modules)
+        {
+            ModuleMark mark = new ModuleMark(module); 
+            mark.setMark(75);
+            value = value - 10;
+            marks.add(mark);
+        }
         
     }
     
@@ -115,11 +123,12 @@ public class Student
         course.print();
     }
     
-    public void printModules()
+private void printModules()
 {
-     for(ModuleMark Mark: marks)
+    for(ModuleMark Mark: marks)
     {
-        
+        mark:print();  
+        System.out.println("/t" + course.convertToGrade(Mark.getValue()));
     }
 }
    

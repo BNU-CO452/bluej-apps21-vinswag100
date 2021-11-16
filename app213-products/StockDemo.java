@@ -1,4 +1,4 @@
-
+import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -6,20 +6,23 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * Modified by Vincent Ogieva 
  */
 public class StockDemo
 {
-    // The stock manager.
-    private StockList stock;
+// The stock manager.
+private StockList stock;
 
-    /**
-     * Create a StockManager and populate it with at least
-     * 10 sample products.
-     */
-    public StockDemo()
-    {
+private Random random; 
+    
+/**
+ * Create a StockManager and populate it with at least
+ * 10 sample products.
+ */
+public StockDemo(StockList demo)
+{
         this.stock = new StockList();
-        
+        this.random = new Random();
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
@@ -27,19 +30,25 @@ public class StockDemo
         stock.add(new Product(102, "Pogo jumper"));
         stock.add(new Product(103, "Electric Scooter"));
         stock.add(new Product(104, "GTA V"));
+        stock.add(new Product(105, "Skateboard"));
+        stock.add(new Product(106, "Ligh saber"));
+        stock.add(new Product(107, "jungle rope"));
+        stock.add(new Product(108, "Uncharted 5"));
+        stock.add(new Product(109, "Playstation 5"));
+        stock.add(new Product(110, "Fifa 20"));
         
-        runDemo();
-    }
+        runDemo(); 
+}
      
-    /**
-     * Provide a demonstration of how the ProductList meets all
-     * the user requirements by making a delivery of each product 
-     * buying it in various amounts and then selling each
-     * product by various amounts. Make sure all the requirements
-     * have been demonstrated.
-     */
-    public void runDemo()
-    {
+/**
+ * Provide a demonstration of how the ProductList meets all
+ * the user requirements by making a delivery of each product 
+ * buying it in various amounts and then selling each
+ * product by various amounts. Make sure all the requirements
+ * have been demonstrated.
+ */
+public void runDemo()
+{
         // Show details of all of the products before delivery.
         
         stock.print();
@@ -49,15 +58,25 @@ public class StockDemo
 
         sellProducts();
         stock.print();        
-    }
-    
-    private void buyProducts()
-    {
-        stock.buyProduct(101, 500);
-    }
-
-    private void sellProducts()
-    {
-        stock.sellProduct(101,300);
-    }    
 }
+    
+/**
+ * This method will buy different quantities of
+ * each of the productsin the stock list.
+ */
+private void buyProducts()
+{
+    for(int i = 101; 1 <=104; i++)
+        stock.buyProduct(i,random.nextInt(1001));
+}
+
+/**
+ * This method will buy sell quantities of
+ * each of the productsin the stock list.
+ */
+private void sellProducts()
+{
+    for(int i = 101; 1 <=104; i++)
+        stock.sellProduct(i,random.nextInt(1001));
+}
+}    

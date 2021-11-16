@@ -43,17 +43,14 @@ public class Course
      */
     public void createModules()
     {
-        Module moduleCO452 = new Module("CO452", "Programming Concepts");
-        addModule(moduleCO452);
-        
-        Module moduleCO453 = new Module("CO453", "Application Programming");
-        addModule(moduleCO453);
-        
-        Module moduleCO454 = new Module("CO454", "Digital Technologies and Proffesional Practice");
-        addModule(moduleCO454);
-        
-        Module moduleCO456 = new Module("CO456", "Web Development"); 
-        addModule(moduleCO456);
+        Module Co452 = new Module("Co452", "Programming Concepts");
+        Module Co453 = new Module("Co453", "Application Programming");
+        Module Co454 = new Module("Co454", "Digital Technologies and Proffesional Practice");
+        Module Co456 = new Module("Co456", "Web Development"); 
+        addModule(Co452);
+        addModule(Co453);
+        addModule(Co454);
+        addModule(Co456);
          
     }
     
@@ -70,18 +67,18 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
-        Grades grade = Grades.NS;
-        
-        if(mark > Grades.B.getValue())
-        {
-            return Grades .A;
-        }
-        else if(mark >= 60)
-        {
+        if(mark >= 0 && mark <= 39)
+            return Grades.F;
+        else if(mark <= 49)
+            return Grades.D; 
+        else if(mark <= 59)
+            return Grades.C; 
+        else if(mark <= 69)
             return Grades.B;
-        }
-         
-        return Grades.NS;
+        else if(mark <= 100)
+            return Grades.A;
+        else
+            return Grades.NS;
     }
     
     /**
@@ -90,7 +87,18 @@ public class Course
      */
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
-        return Grades.NS;
+        int total = 0;
+        int finalMark = 0;
+        
+        for(ModuleMark mark : marks)
+        {
+            total = total + mark.getValue();
+        }
+        
+        finalMark = total / MAXN_MODULES;
+        finalGrade = convertToGrade(finalMark);
+        
+        return finalGrade;
     }
     
     /**
@@ -111,21 +119,12 @@ public class Course
      */
     public void printModules()
     {
-      System.out.println("Course Modules");
-      System.out.println("---------------");
-      System.out.println();
-      
       for (Module module : modules) 
       {
-          System.out.print(module.getCode());
-          System.out.println(module.getTitle());
-          
-          
-          
-    
-      } 
-       
-       
+          module.print();
+          module.printCredit();
+      }
+      
        System.out.println();
     }
 }
