@@ -1,0 +1,56 @@
+StockList smythstoystore = new StockList();
+StockDemo vincestockdemo = new StockDemo(smythstoystore);
+vincestockdemo.runDemo();
+
+ Vince's Stock List
+ ====================
+
+ ID 101: Alloy Bikes stock level: 0
+ ID 102: Pogo jumper stock level: 0
+ ID 103: Electric Scooter stock level: 0
+ ID 104: GTA V stock level: 0
+ ID 105: Skateboard stock level: 0
+ ID 106: Ligh saber stock level: 0
+ ID 107: jungle rope stock level: 0
+ ID 108: Uncharted 5 stock level: 0
+ ID 109: Playstation 5 stock level: 0
+ ID 110: Fifa 20 stock level: 0
+
+Bought 665of Alloy Bikes
+Bought 275of Pogo jumper
+Bought 918of Electric Scooter
+Bought 30of GTA V
+
+ Vince's Stock List
+ ====================
+
+ ID 101: Alloy Bikes stock level: 665
+ ID 102: Pogo jumper stock level: 275
+ ID 103: Electric Scooter stock level: 918
+ ID 104: GTA V stock level: 30
+ ID 105: Skateboard stock level: 0
+ ID 106: Ligh saber stock level: 0
+ ID 107: jungle rope stock level: 0
+ ID 108: Uncharted 5 stock level: 0
+ ID 109: Playstation 5 stock level: 0
+ ID 110: Fifa 20 stock level: 0
+
+Sold 152of Alloy Bikes
+cant sell685 of Pogo jumper because only have 275
+Sold 335of Electric Scooter
+cant sell537 of GTA V because only have 30
+
+ Vince's Stock List
+ ====================
+
+ ID 101: Alloy Bikes stock level: 513
+ ID 102: Pogo jumper stock level: 275
+ ID 103: Electric Scooter stock level: 583
+ ID 104: GTA V stock level: 30
+ ID 105: Skateboard stock level: 0
+ ID 106: Ligh saber stock level: 0
+ ID 107: jungle rope stock level: 0
+ ID 108: Uncharted 5 stock level: 0
+ ID 109: Playstation 5 stock level: 0
+ ID 110: Fifa 20 stock level: 0
+
