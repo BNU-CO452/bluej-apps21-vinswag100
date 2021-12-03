@@ -2,7 +2,7 @@
 /**
  * Write a description of class Program here.
  *
- * @author (your name)
+ * @author (Vincent Ogieva)
  * @version (a version number or a date)
  */
 public class Program
