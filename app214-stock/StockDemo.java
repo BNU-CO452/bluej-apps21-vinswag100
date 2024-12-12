@@ -31,7 +31,7 @@ public StockDemo(StockList demo)
         stock.add(new Product(103, "Electric Scooter"));
         stock.add(new Product(104, "GTA V"));
         stock.add(new Product(105, "Skateboard"));
-        stock.add(new Product(106, "Ligh saber"));
+        stock.add(new Product(106, "Light saber"));
         stock.add(new Product(107, "jungle rope"));
         stock.add(new Product(108, "Uncharted 5"));
         stock.add(new Product(109, "Playstation 5"));
@@ -66,7 +66,7 @@ public void runDemo()
  */
 private void buyProducts()
 {
-    for(int i = 101; i <=104; i++)
+    for(int i = 101; i <=110; i++)
         stock.buyProduct(i,random.nextInt(1001));
 }
 
@@ -76,7 +76,8 @@ private void buyProducts()
  */
 private void sellProducts()
 {
-    for(int i = 101; i <=104; i++)
+    for(int i = 101; i <=110; i++)
         stock.sellProduct(i,random.nextInt(1001));
 }
+  
 }    

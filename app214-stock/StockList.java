@@ -50,7 +50,7 @@ public void buyProduct(int productID, int amount)
    Product product = findProduct(productID);
    if(product != null)
 {    
-    if(product.getQuantity() < 1000)
+    if(product.getQuantity() < 10)
     {
         product.increaseQuantity(amount);
         System.out.println("Bought " + amount + "of " + product.getName());    

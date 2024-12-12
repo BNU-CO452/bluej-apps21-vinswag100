@@ -1,0 +1,199 @@
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the ID: 
+156
+Please enter the name of the product: beyblades
+Product 156, beyblades has been Added 
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a quantity of product
+    Sell:       Sell a quantity of product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Vince's Stock List
+ ====================
+
+ ID 101: Alloy Bikes stock level: 0
+ ID 102: Pogo jumper stock level: 0
+ ID 103: Electric scooter stock level: 0
+ ID 104: GTA V stock level: 0
+ ID 105: Skateboard stock level: 0
+ ID 106: Light saber stock level: 0
+ ID 107: Jungle rope stock level: 0
+ ID 108: Uncharted 5 stock level: 0
+ ID 109: Playstation 5 stock level: 0
+ ID 110: Fifa 20 stock level: 0
+ ID 156: beyblades stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a quantity of product
+    Sell:       Sell a quantity of product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a quantity of product
+    Sell:       Sell a quantity of product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > remove
+Please enter the ID: 
+104
+Please enter the name of the product: GTA V
+Product 104, GTA V has been Removed 
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a quantity of product
+    Sell:       Sell a quantity of product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Vince's Stock List
+ ====================
+
+ ID 104: GTA V stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a quantity of product
+    Sell:       Sell a quantity of product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
+StockList stockLis1 = new StockList();
+StockDemo stockDem1 = new StockDemo(stockLis1);
+stockDem1.runDemo();
+
+ Vince's Stock List
+ ====================
+
+ ID 101: Alloy Bikes stock level: 0
+ ID 102: Pogo jumper stock level: 0
+ ID 103: Electric Scooter stock level: 0
+ ID 104: GTA V stock level: 0
+ ID 105: Skateboard stock level: 0
+ ID 106: Light saber stock level: 0
+ ID 107: jungle rope stock level: 0
+ ID 108: Uncharted 5 stock level: 0
+ ID 109: Playstation 5 stock level: 0
+ ID 110: Fifa 20 stock level: 0
+
+Bought 933of Alloy Bikes
+Bought 139of Pogo jumper
+Bought 816of Electric Scooter
+Bought 692of GTA V
+Bought 569of Skateboard
+Bought 739of Light saber
+Bought 983of jungle rope
+Bought 382of Uncharted 5
+Bought 449of Playstation 5
+Bought 606of Fifa 20
+
+ Vince's Stock List
+ ====================
+
+ ID 101: Alloy Bikes stock level: 933
+ ID 102: Pogo jumper stock level: 139
+ ID 103: Electric Scooter stock level: 816
+ ID 104: GTA V stock level: 692
+ ID 105: Skateboard stock level: 569
+ ID 106: Light saber stock level: 739
+ ID 107: jungle rope stock level: 983
+ ID 108: Uncharted 5 stock level: 382
+ ID 109: Playstation 5 stock level: 449
+ ID 110: Fifa 20 stock level: 606
+
+Sold 231of Alloy Bikes
+cant sell284 of Pogo jumper because only have 139
+Sold 777of Electric Scooter
+Sold 45of GTA V
+Sold 158of Skateboard
+cant sell795 of Light saber because only have 739
+Sold 662of jungle rope
+cant sell500 of Uncharted 5 because only have 382
+cant sell596 of Playstation 5 because only have 449
+cant sell638 of Fifa 20 because only have 606
+
+ Vince's Stock List
+ ====================
+
+ ID 101: Alloy Bikes stock level: 702
+ ID 102: Pogo jumper stock level: 139
+ ID 103: Electric Scooter stock level: 39
+ ID 104: GTA V stock level: 647
+ ID 105: Skateboard stock level: 411
+ ID 106: Light saber stock level: 739
+ ID 107: jungle rope stock level: 321
+ ID 108: Uncharted 5 stock level: 382
+ ID 109: Playstation 5 stock level: 449
+ ID 110: Fifa 20 stock level: 606
+
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a quantity of product
+    Sell:       Sell a quantity of product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Vince's Stock List
+ ====================
+
+
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Buy:        Buy a quantity of product
+    Sell:       Sell a quantity of product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit

@@ -1,0 +1,24 @@
+Product product1 = new Product(101, "Alloy bikes");
+product1.print();
+ ID 101: Alloy bikes stock level: 0
+product1.decreaseQuantity(3);
+product1.print();
+ ID 101: Alloy bikes stock level: 0
+product1.increaseQuantity(4);
+product1.print();
+ ID 101: Alloy bikes stock level: 4
+product1.decreaseQuantity(2);
+product1.print();
+ ID 101: Alloy bikes stock level: 2
+Product product2 = new Product(102, "pogo jumper");
+StockList smythstoystore = new StockList();
+smythstoystore.add(product1);
+smythstoystore.add(product2);
+smythstoystore.print();
+
+ Vince's Stock List
+ ====================
+
+ ID 101: Alloy bikes stock level: 2
+ ID 102: pogo jumper stock level: 0
+

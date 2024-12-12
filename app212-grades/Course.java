@@ -19,7 +19,7 @@ public class Course
      
     public Course()
     {
-        this("G400", "BSc Computing");
+        this("GW4F", "BSc Computing and Web Developement");
     }
     
     /**
@@ -43,7 +43,15 @@ public class Course
      */
     public void createModules()
     {
-
+        Module Co452 = new Module("Co452", "Programming Concepts");
+        Module Co453 = new Module("Co453", "Application Programming");
+        Module Co454 = new Module("Co454", "Digital Technologies and Proffesional Practice");
+        Module Co456 = new Module("Co456", "Web Development"); 
+        addModule(Co452);
+        addModule(Co453);
+        addModule(Co454);
+        addModule(Co456);
+         
     }
     
     public void addModule(Module module)
@@ -59,7 +67,18 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
-        return Grades.NS;
+        if(mark >= 0 && mark <= 39)
+            return Grades.F;
+        else if(mark <= 49)
+            return Grades.D; 
+        else if(mark <= 59)
+            return Grades.C; 
+        else if(mark <= 69)
+            return Grades.B;
+        else if(mark <= 100)
+            return Grades.A;
+        else
+            return Grades.NS;
     }
     
     /**
@@ -68,7 +87,18 @@ public class Course
      */
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
-        return Grades.NS;
+        int total = 0;
+        int finalMark = 0;
+        
+        for(ModuleMark mark : marks)
+        {
+            total = total + mark.getValue();
+        }
+        
+        finalMark = total / MAXN_MODULES;
+        finalGrade = convertToGrade(finalMark);
+        
+        return finalGrade;
     }
     
     /**
@@ -89,6 +119,12 @@ public class Course
      */
     public void printModules()
     {
-        System.out.println();
+      for (Module module : modules) 
+      {
+          module.print();
+          module.printCredit();
+      }
+      
+       System.out.println();
     }
 }

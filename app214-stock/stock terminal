@@ -1,0 +1,199 @@
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the ID: 
+106
+Please enter the name of the product: Light saber
+Product 106, Light saber has been ADDED
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the ID: 
+107
+Please enter the name of the product: Jungle rope
+Product 107, Jungle rope has been ADDED
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the ID: 
+108
+Please enter the name of the product: Uncharted 5
+Product 108, Uncharted 5 has been ADDED
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the ID: 
+109
+Please enter the name of the product: Playstation 5
+Product 109, Playstation 5 has been ADDED
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the ID: 
+110
+Please enter the name of the product: Fifa 20
+Product 110, Fifa 20 has been ADDED
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Vince's Stock List
+ ====================
+
+ ID 101: Alloy Bikes stock level: 0
+ ID 102: Pogo jumper stock level: 0
+ ID 103: Electric scooter stock level: 0
+ ID 104: GTAV stock level: 0
+ ID 105: Skateboard stock level: 0
+ ID 106: Light saber stock level: 0
+ ID 107: Jungle rope stock level: 0
+ ID 108: Uncharted 5 stock level: 0
+ ID 109: Playstation 5 stock level: 0
+ ID 110: Fifa 20 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
+Program program1 = new Program();
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > remove
+Please enter the ID: 
+106
+Please enter the name of the product: Light saber
+Product 106, Light saber has been Removed
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Vince's Stock List
+ ====================
+
+ ID 106: Light saber stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the ID: 
+150
+Please enter the name of the product: Sony xperia
+Product 150, Sony xperia has been Added 
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Vince's Stock List
+ ====================
+
+ ID 150: Sony xperia stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Vincent Ogieva
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
